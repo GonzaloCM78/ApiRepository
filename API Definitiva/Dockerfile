@@ -13,7 +13,8 @@ RUN mvn dependency:go-offline
 COPY . .
 
 # Compila el proyecto
-RUN mvn clean package -DskipTests
+RUN mvn clean package spring-boot:repackage -DskipTests
+
 
 # Expón el puerto de Spring Boot
 EXPOSE 8080
