@@ -19,4 +19,5 @@ RUN mvn clean package -DskipTests
 EXPOSE 8080
 
 # Ejecuta el .jar generado
-CMD ["java", "-jar", "target/frogger-0.0.1-SNAPSHOT.jar"]
+CMD java -jar target/frogger-0.0.1-SNAPSHOT.jar
+
